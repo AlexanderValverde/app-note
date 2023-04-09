@@ -4,7 +4,7 @@ import { FiSave } from "react-icons/fi";
 const AddNote = ({ handleAddNote }) => {
 
 	const [newNote, setNewNote] = useState([]);
-	const characterLimit = 50;
+	const characterLimit = 250;
 
 	const handleChange = (event) => {
 		if ((characterLimit - event.target.value.length) >= 0) {
